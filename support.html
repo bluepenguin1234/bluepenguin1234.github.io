@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='224' fill='%23142B39'/%3E%3Cpath d='M302 704V312L718 704V432' fill='none' stroke='%23FFFFFF' stroke-width='92' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='718' cy='312' r='50' fill='%235EDCC0'/%3E%3C/svg%3E">
 <title>Nivli Support</title>
 <style>
   :root{
@@ -18,7 +19,8 @@
   html,body{margin:0;background:var(--bg);color:var(--text)}
   body{font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:0 20px}
   main{max-width:720px;margin:0 auto;padding:48px 0 72px}
-  header a{color:var(--accent);text-decoration:none;font-weight:600}
+  header a{color:var(--accent);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:8px}
+  header a .icon{width:22px;height:22px;flex:0 0 auto}
   h1{color:var(--ink);font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:.4em 0 .2em}
   h2{color:var(--ink);font-size:1.25rem;margin:2em 0 .5em}
   h3{color:var(--ink);font-size:1.05rem;margin:1.4em 0 .3em}
@@ -38,15 +40,27 @@
 </head>
 <body>
 <main>
-  <header><a href="index.html">← Nivli</a></header>
+  <header><a href="index.html"><svg class="icon" viewBox="0 0 1024 1024" role="img" aria-label="Nivli icon"><rect width="1024" height="1024" rx="224" fill="#142B39"/><path d="M302 704V312L718 704V432" fill="none" stroke="#FFFFFF" stroke-width="92" stroke-linecap="round" stroke-linejoin="round"/><circle cx="718" cy="312" r="50" fill="#5EDCC0"/></svg> Nivli</a></header>
   <h1>Nivli Support</h1>
   <p>Nivli remembers when you last did something and reminds you when it’s time again. Log a moment (“Changed the air filter”), ask later (“When did I last change the air filter?”), and set a reminder so it comes back around. Everything stays on your iPhone, unless you choose to share some things with your household through your own iCloud. Requires iOS 18 or later.</p>
+
+  <div class="note">
+    <p><strong>What’s new in 1.1</strong></p>
+    <ul>
+      <li><strong>Details on every thing</strong> — size, brand, model, where it’s kept, expiry date, a link, who did it, notes. Correct one and Nivli keeps the old value and shows where each value came from.</li>
+      <li><strong>Ask in your own words</strong> — on iPhones with Apple Intelligence, a question the keyword search can’t answer is answered by Apple’s on-device model from a digest of your own records. Nothing leaves the phone, and a switch in <strong>Settings › Siri › Answer in your own words</strong> turns it off. Other iPhones keep the keyword answers.</li>
+      <li><strong>One sentence, several things</strong> — “Hey Siri, ask Nivli”, then “I changed the furnace filter today, its size is 16 by 25 by 1, remind me again in three months.” Siri asks which thing when two match.</li>
+      <li><strong>Next steps on an answer</strong> — <em>Did it</em> (with Undo), <em>Remind me</em> or <em>Change date</em>, <em>Open saved link</em> (it opens the page you saved and nothing else; it never buys anything), <em>Share details</em> (the system share sheet; nothing is sent by itself).</li>
+      <li><strong>Appearance</strong> — Dark (the default), Light, or Match iPhone, under <strong>Settings › Appearance</strong>.</li>
+    </ul>
+  </div>
 
   <h2>The basics</h2>
   <ul>
     <li><strong>Log it</strong> — tap <strong>+</strong> and type what you did. Nivli files it under the matching thing or creates a new one. Use <em>Log a past date</em> on a thing to backfill.</li>
     <li><strong>Ask</strong> — open a thing to see “3 months ago” and the exact date, or ask Siri. For anything else — “how often do I…?”, “what’s overdue?” — say “Hey Siri, ask Nivli” or type the question into search on Home.</li>
     <li><strong>Remind</strong> — on a thing, set a one-off date or a repeat like “every 3 months”. Logging a repeating thing schedules the next reminder automatically.</li>
+    <li><strong>Details</strong> — save facts on a thing: size, brand, model, where it’s kept, expiry date, link, who did it. Ask for one later (“what size is the furnace filter?”). A correction keeps the old value.</li>
     <li><strong>Notifications</strong> — each reminder offers <em>Did it</em>, <em>Tomorrow</em>, and <em>Next week</em> without opening the app.</li>
     <li><strong>History</strong> — every log across all things, newest first, searchable.</li>
     <li><strong>Photos</strong> — attach a photo to an entry (<em>Add photo</em> or <em>Take photo</em>). Nivli reads the text in it on your phone, so you can search for “16x25” later.</li>
@@ -63,7 +77,7 @@
     <li>What’s coming up in Nivli?</li>
     <li>Remember something in Nivli<small>Siri asks “What should I remember?” — say “the furnace filter is 16x25x1.” Later: “Ask Nivli” — “What size is the furnace filter?” “Tell Nivli to remember something” and “Save a note in Nivli” work too.</small></li>
     <li>Log this in Nivli<small>On iPhones with Apple Intelligence, Siri may also understand “this” while a thing is open on screen. The phrases above are the reliable ones.</small></li>
-    <li>Ask Nivli<small>Siri asks “What do you want to know?” — then ask in plain words: “how many times did I water the plants this month?”, “what's overdue?”, “what did I do last week?”. “Ask Nivli a question” and “Check Nivli” work too.</small></li>
+    <li>Ask Nivli<small>Siri asks “What would you like to remember, ask, or do?” — then answer in plain words: “how many times did I water the plants this month?”, “what's overdue?”, “what did I do last week?”. You can also say several things at once: “I changed the furnace filter today, its size is 16 by 25 by 1, remind me again in three months.” Siri asks which thing when two match. “Ask Nivli a question” and “Check Nivli” work too.</small></li>
   </ul>
   <p>The same phrases are listed in the app under <strong>Settings › Siri › Talk to Nivli with Siri</strong>, where you can also add them to the Shortcuts app. Say the phrase as written; details such as the question or the fact are given when Siri asks.</p>
 
@@ -82,7 +96,8 @@
   <ul>
     <li>Nivli’s Siri phrases need <strong>iOS 18 or later</strong> and the app must be installed and <strong>opened at least once</strong> since installation. After a fresh install, give Siri a minute or two to learn the new phrases.</li>
     <li>Include the words <strong>“in Nivli”</strong>. Without them Siri may hand the request to Reminders or Notes.</li>
-    <li>Use the phrases above as written. Siri matches them closely; long freeform sentences may not be recognised.</li>
+    <li>Use the phrases above as written — Siri matches the phrase itself closely. What you say <em>after</em> Siri asks can be a longer sentence: “I changed the furnace filter today, its size is 16 by 25 by 1, remind me again in three months.”</li>
+    <li><em>Ask Nivli</em> and <em>Get a detail</em> need the iPhone unlocked, because details can be private. Unlock the phone and ask again.</li>
     <li>Make sure Siri is enabled: <strong>Settings › Apple Intelligence &amp; Siri</strong> (or <strong>Settings › Siri</strong>), and that <strong>Settings › Apps › Nivli › Siri</strong> allows Nivli to work with Siri.</li>
     <li>If Siri says the thing wasn’t found, say it the way it is named in Nivli, or use “Log something in Nivli” and answer Siri’s question.</li>
   </ul>
@@ -127,16 +142,18 @@
     <li>“What’s overdue?” and “What’s coming up?” / “What’s next?”</li>
     <li>“What did I do this week / last week / yesterday / this month?”</li>
   </ul>
-  <p>It also answers <em>what / which / where / who</em> questions from your notes and from text read in photos: “what size is the furnace filter?” → “The furnace filter is 16x25x1.” And it finds things by photo text (“when did I last buy 16x25x1”). The answers come from simple keyword and date matching on your own history, on your phone — there is no AI model and nothing is sent anywhere, so the same question always gets the same answer. If Nivli says it couldn’t find something, use the thing’s name as it appears in the app, or one of the shapes above. Free for everyone.</p>
+  <p>It also answers <em>what / which / where / who</em> questions from the details you saved, falling back to your notes and to text read in photos: “what size is the furnace filter?” → “Furnace filter: size 16x25x1.” And it finds things by photo text (“when did I last buy 16x25x1”). These answers come from keyword and date matching on your own history, on your phone, so the same question always gets the same answer. If Nivli says it couldn’t find something, use the thing’s name as it appears in the app, or one of the shapes above. Free for everyone.</p>
+  <p>On iPhones with Apple Intelligence (iPhone 15 Pro and later, on iOS 26), a question that none of these shapes fit — “is it time to do the filter yet?” — goes to Apple’s on-device model instead of coming back empty. It receives a digest of your own records and nothing else, it runs on the phone, and the answer names the records it used. Nothing leaves your iPhone. Turn it off in <strong>Settings › Siri › Answer in your own words</strong>; other iPhones keep the keyword answers. Asking needs an unlocked iPhone, because details can be private.</p>
 
-  <h3>How do I save a fact, like a filter size?</h3>
-  <p>Say <strong>“Hey Siri, remember something in Nivli”</strong> and answer “What should I remember?” with the fact — “the furnace filter is 16x25x1”. Nivli saves it as a note on the matching thing, or creates a thing named after it (“Furnace filter”). In the app, type <em>“Remember that …”</em> or <em>“Note that …”</em> in the capture sheet; the switch at the top changes to <strong>Note</strong>. Notes can also be edited on the thing’s edit screen. Ask later with “Hey Siri, ask Nivli” and answer “What do you want to know?” with “what size is the furnace filter?”, or type the question into search on Home.</p>
+  <h3>How do I save a detail, like a filter size — and correct it later?</h3>
+  <p>Say <strong>“Hey Siri, remember something in Nivli”</strong> and answer “What should I remember?” with the fact — “the furnace filter is 16x25x1”. Nivli saves it as a <strong>detail</strong> on the matching thing (size, brand, model, where it’s kept, expiry date, link, who did it, or a plain note), or creates a thing named after it (“Furnace filter”). If two things match, Siri asks which one. In the app, type <em>“Remember that …”</em> or <em>“Note that …”</em> in the capture sheet; the switch at the top changes to <strong>Note</strong>. Notes can also be edited on the thing’s edit screen.</p>
+  <p>Details are listed on the thing under <strong>Details</strong>. Saying a new size corrects it and keeps the old value: tap a detail to see its history, where each value came from (Siri, typed, a note, a photo, a household member), and restore an earlier value. If two people in a household saved different values while offline, both are kept and the thing shows that there is more than one; pick the one you want. Ask later with “Hey Siri, ask Nivli” and answer with “what size is the furnace filter?”, or type the question into search on Home. In the Shortcuts app, <strong>Get a detail</strong> and <strong>Save a detail</strong> do the same inside a shortcut.</p>
 
   <h3>I tapped Did it on the widget — why does the reminder update only when I open the app?</h3>
-  <p>The <strong>Did it</strong> button on the Home Screen widgets logs the thing without opening Nivli. The widget itself updates straight away, but iOS gives widgets only a moment to run and no access to the app’s database, so the actual history entry and the rolled-forward reminder are written the next time Nivli runs. That happens when you open the app, when you tap a button on a Nivli notification, or when a household change arrives — usually within minutes, and always the next time you open Nivli. Nothing is lost in between: the tap is stored safely on your phone until then.</p>
+  <p>The <strong>Did it</strong> button on the Home Screen widgets logs the thing without opening Nivli. The widget says <strong>“Logged · syncs when Nivli opens”</strong> straight away, but iOS gives widgets only a moment to run and no access to the app’s database, so the actual history entry and the rolled-forward reminder are written the next time Nivli runs. That happens when you open the app, when you ask Siri something, when you tap a button on a Nivli notification, or when a household change arrives — usually within minutes, and always the next time you open Nivli. Nothing is lost in between: the tap is stored safely on your phone until then.</p>
 
   <h3>Siri shows a card, or knows what’s on screen — is that Nivli or Apple?</h3>
-  <p>Apple. Nivli provides its actions to Siri through Apple’s App Intents; Siri decides how to present them. On iOS 18 and later Siri can show a card with the thing, its last time, next reminder, latest photo and first note, and can understand “log this in Nivli” for the thing open on screen. On iPhones that support Apple Intelligence, Siri and Spotlight can also find your things by meaning. Which of these you get depends on your iPhone model, iOS version and Siri settings — Nivli has no assistant of its own and no wake word other than “Hey Siri”.</p>
+  <p>Apple. Nivli provides its actions to Siri through Apple’s App Intents; Siri decides how to present them. On iOS 18 and later Siri can show a card with the thing, its last time, next reminder, latest photo and its details (or the first note), and can understand “log this in Nivli” for the thing open on screen. On iPhones that support Apple Intelligence, Siri and Spotlight can also find your things by meaning; Spotlight sees only titles and dates, never your details or notes. Which of these you get depends on your iPhone model, iOS version and Siri settings — Nivli has no assistant of its own and no wake word other than “Hey Siri”.</p>
 
   <h3>How do I restore Nivli+ on a new phone?</h3>
   <p>Sign in to the same Apple Account you used to buy it, then in Nivli go to <strong>Settings › Restore Purchases</strong> (just below Nivli+). The same button is on the Nivli+ purchase screen. Restoring is free and can be repeated as often as you like. Because your things and history live on the phone, they come across with your iPhone backup, not with the purchase. Shared household things come back on their own once the new phone is signed in to the same iCloud account.</p>
@@ -151,7 +168,7 @@
   <p>Yes — restore the new phone from your iCloud or computer backup, or use Quick Start. Nivli’s data is part of the app’s backup. There is no separate account. Household things also arrive on their own once the new phone is signed in to the same iCloud account.</p>
 
   <h3>What does Nivli+ include, and what is free?</h3>
-  <p>Free: unlimited things and logs, full history and timeline, Siri, widgets, and up to 3 active reminders. Nivli+: unlimited active reminders, custom repeat intervals such as “every 45 days”, CSV export, and creating a household (joining one someone else created is free). Nivli+ is $2.99/month, $19.99/year, or $39.99 once (US prices; your local price is shown in the app).</p>
+  <p>Free: unlimited things and logs, full history and timeline, details on every thing, Ask Nivli (including asking in your own words on iPhones with Apple Intelligence), Siri, widgets, and up to 3 active reminders. Nivli+: unlimited active reminders, custom repeat intervals such as “every 45 days”, CSV export, and creating a household (joining one someone else created is free). Nivli+ is $2.99/month, $19.99/year, or $39.99 once (US prices; your local price is shown in the app).</p>
 
   <h3>How do I export my history?</h3>
   <p>With Nivli+, go to <strong>Settings › Your data › Export history as CSV</strong> to create a CSV file and share it to Files, Mail, or another app.</p>
