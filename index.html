@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="description" content="Nivli remembers when you last did something and reminds you when it's time again. Siri-first, private, on your iPhone — and shareable with your household.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='224' fill='%23142B39'/%3E%3Cpath d='M302 704V312L718 704V432' fill='none' stroke='%23FFFFFF' stroke-width='92' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='718' cy='312' r='50' fill='%235EDCC0'/%3E%3C/svg%3E">
 <title>Nivli — Remember when.</title>
 <style>
   :root{
@@ -24,8 +25,7 @@
   .hero{background:#142B39;color:var(--hero-text);padding:56px 0 64px}
   .hero .wrap{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
   .mark{display:inline-flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.01em;font-size:1.1rem}
-  .mark .icon{width:44px;height:44px;border-radius:11px;background:#0F2230;border:1px solid #24404F;display:grid;place-items:center;font-size:1.35rem;font-weight:800;position:relative}
-  .mark .icon::after{content:"";position:absolute;right:8px;bottom:9px;width:8px;height:8px;border-radius:50%;background:#5EDCC0}
+  .mark .icon{width:44px;height:44px;display:block;flex:0 0 auto}
   .hero h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;letter-spacing:-.03em;margin:0}
   .hero h1 span{color:#5EDCC0}
   .hero p.lead{font-size:1.2rem;max-width:34em;margin:0;color:#D9E2E6}
@@ -67,7 +67,7 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="mark"><span class="icon">N</span> Nivli</div>
+    <div class="mark"><svg class="icon" viewBox="0 0 1024 1024" role="img" aria-label="Nivli icon"><rect width="1024" height="1024" rx="224" fill="#142B39"/><path d="M302 704V312L718 704V432" fill="none" stroke="#FFFFFF" stroke-width="92" stroke-linecap="round" stroke-linejoin="round"/><circle cx="718" cy="312" r="50" fill="#5EDCC0"/></svg> Nivli</div>
     <h1>Remember <span>when.</span></h1>
     <p class="lead">Nivli remembers when you last did something — changed the air filter, watered the plants, renewed the passport — and reminds you when it’s time again.</p>
     <a class="cta" href="https://apps.apple.com/app/id6811270888">Download on the App Store<small>Free · iPhone · iOS 18 or later</small></a>
@@ -82,6 +82,16 @@
       <div class="card"><div class="dot"></div><h3>Log it once</h3><p>Type or say what you did — “Changed the air filter.” Nivli files it under the right thing and keeps the whole history.</p></div>
       <div class="card"><div class="dot"></div><h3>Ask any time</h3><p>“When did I last…?” gets a straight answer: 3 months, 2 weeks ago — on June 1. Ask more — “how often?”, “what’s overdue?” — in the app or from Siri.</p></div>
       <div class="card"><div class="dot"></div><h3>Reminded when it’s time</h3><p>One-off or repeating reminders that roll forward when you log. Notifications with Did it, Tomorrow, Next week.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>The small facts, kept with the thing</h2>
+    <div class="grid two">
+      <div class="card"><div class="dot"></div><h3>Details on every thing</h3><p>Size, brand, model, where it’s kept, expiry date, a link, who did it. Correct one and Nivli keeps the old value, and where each value came from.</p></div>
+      <div class="card"><div class="dot"></div><h3>Ask in your own words</h3><p>On iPhones with Apple Intelligence, a question the keyword search can’t answer goes to Apple’s on-device model, which reads only your own records. Nothing leaves your iPhone, and a switch in Settings turns it off.</p></div>
     </div>
   </div>
 </section>
@@ -117,7 +127,7 @@
       <li><b>“Hey Siri, remind me in Nivli”</b><span>Siri asks what and when. “In one year about my passport.”</span></li>
       <li><b>“Hey Siri, what’s coming up in Nivli?”</b><span>The things due soon.</span></li>
       <li><b>“Hey Siri, remember something in Nivli”</b><span>“What should I remember?” — “The furnace filter is 16x25x1.” Later: “Ask Nivli” — “What size is the furnace filter?”</span></li>
-      <li><b>“Hey Siri, ask Nivli”</b><span>“What do you want to know?” — “How many times did I water the plants this month?” “What’s overdue?” “What did I do last week?” Type the same into search on Home for an answer card. No AI model, nothing leaves your phone.</span></li>
+      <li><b>“Hey Siri, ask Nivli”</b><span>“What do you want to know?” — “How many times did I water the plants this month?” “What’s overdue?” “What did I do last week?” Type the same into search on Home for an answer card. On iPhones with Apple Intelligence, ask in your own words too — answered from your own records, on your iPhone.</span></li>
     </ul>
   </div>
 </section>
@@ -133,6 +143,7 @@
           <li>Unlimited things and logs</li>
           <li>Full history and timeline</li>
           <li>Photos on entries, with the text in them searchable</li>
+          <li>Details on every thing, with their history</li>
           <li>Siri and widgets</li>
           <li>Up to 3 active reminders</li>
           <li>Join a household and log shared things</li>
@@ -157,7 +168,7 @@
 <section>
   <div class="wrap">
     <h2>Private by design</h2>
-    <p>Nivli has no account, no servers, no analytics, no advertising, and no third-party code. Your things, logs, and reminders live in the app on your iPhone and in your own device backup. Things you share with your household are stored in the creator’s own iCloud account, visible only to the people invited — never to us. Photos you attach are stored in the app, and the text in them is read on the device. The only permissions it asks for are Notifications, if you set a reminder, and the camera, if you tap Take photo. App Store privacy label: <strong>Data Not Collected</strong>.</p>
+    <p>Nivli has no account, no servers, no analytics, no advertising, and no third-party code. Your things, logs, and reminders live in the app on your iPhone and in your own device backup. Things you share with your household are stored in the creator’s own iCloud account, visible only to the people invited — never to us. Photos you attach are stored in the app, and the text in them is read on the device. On iPhones with Apple Intelligence, a question in your own words is answered by Apple’s on-device model on the phone, from your own records; nothing is sent anywhere, and you can turn it off in Settings. The only permissions it asks for are Notifications, if you set a reminder, and the camera, if you tap Take photo. App Store privacy label: <strong>Data Not Collected</strong>.</p>
   </div>
 </section>
 
