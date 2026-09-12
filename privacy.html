@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='224' fill='%23142B39'/%3E%3Cpath d='M302 704V312L718 704V432' fill='none' stroke='%23FFFFFF' stroke-width='92' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='718' cy='312' r='50' fill='%235EDCC0'/%3E%3C/svg%3E">
 <title>Nivli Privacy Policy</title>
 <style>
   :root{
@@ -18,7 +19,8 @@
   html,body{margin:0;background:var(--bg);color:var(--text)}
   body{font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:0 20px}
   main{max-width:720px;margin:0 auto;padding:48px 0 72px}
-  header a{color:var(--accent);text-decoration:none;font-weight:600}
+  header a{color:var(--accent);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:8px}
+  header a .icon{width:22px;height:22px;flex:0 0 auto}
   h1{color:var(--ink);font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:.4em 0 .2em}
   h2{color:var(--ink);font-size:1.25rem;margin:2em 0 .5em}
   p,li{margin:.5em 0}
@@ -34,24 +36,27 @@
 </head>
 <body>
 <main>
-  <header><a href="index.html">← Nivli</a></header>
+  <header><a href="index.html"><svg class="icon" viewBox="0 0 1024 1024" role="img" aria-label="Nivli icon"><rect width="1024" height="1024" rx="224" fill="#142B39"/><path d="M302 704V312L718 704V432" fill="none" stroke="#FFFFFF" stroke-width="92" stroke-linecap="round" stroke-linejoin="round"/><circle cx="718" cy="312" r="50" fill="#5EDCC0"/></svg> Nivli</a></header>
   <h1>Privacy Policy</h1>
   <p class="meta">Effective date: September 12, 2026 · Applies to Nivli for iPhone, version 1.0 and later</p>
+  <p class="meta">Updated for version 1.1: details on things, and asking a question in your own words on iPhones with Apple Intelligence. What Nivli collects has not changed.</p>
 
   <div class="summary">
     <p><strong>The short version:</strong> Nivli does not collect any data. Everything you enter stays in the app on your iPhone — and, if you choose to share some things with your household, in your own iCloud account, where only the people you invite can see it. There is no account with us, no server, no analytics, no advertising, no tracking, and no third-party code. The App Store privacy label for Nivli is <strong>Data Not Collected</strong>.</p>
   </div>
 
   <h2>What Nivli stores, and where</h2>
-  <p>Nivli keeps three kinds of information, all of which you create yourself:</p>
+  <p>Nivli keeps four kinds of information, all of which you create yourself:</p>
   <ul>
     <li><strong>Things</strong> — the items you track, such as “Change air filter”, with any notes you add.</li>
     <li><strong>Logs</strong> — the dates on which a thing happened, with an optional note and an optional photo.</li>
     <li><strong>Reminders</strong> — when a thing should happen next and how often it repeats.</li>
+    <li><strong>Details</strong> — facts you save about a thing: size, brand, model, where it is kept, an expiry date, a link, who did the work, a note. A correction keeps the old value and where each value came from, so nothing is lost.</li>
   </ul>
   <p>This information is stored in a database inside the app’s own storage area on your iPhone. It is never sent to us or to anyone else. We have no way to see it.</p>
   <p>A small summary (thing titles and dates) is also written to a shared area on your phone so the Nivli widgets can display what is coming up. That area belongs to the app and stays on the device.</p>
   <p>The one exception is the optional <strong>Household</strong> feature, described below. Things you have not switched to “Share with household” never leave your iPhone.</p>
+  <p>Details sync only for the things you share with a household: they go into the creator’s own iCloud with the rest of the shared data. The details of your personal things stay on your iPhone. Details are shown only on an unlocked iPhone, and Nivli does not put them into Spotlight.</p>
 
   <h2>Photos</h2>
   <p>You can attach one photo to a log entry — the label on a filter box, a receipt, a meter reading. Here is what happens to it:</p>
@@ -67,7 +72,7 @@
   <h2>Household (optional sharing through your own iCloud)</h2>
   <p>A household lets a family keep some things together — the air filter, the pets, the plants. It is optional, and nothing is shared until you switch a thing to <em>Share with household</em>.</p>
   <ul>
-    <li><strong>Where the data is.</strong> Shared things, their history (including any photos and the text read from them), and the display names members choose are stored in the <strong>iCloud account of the person who created the household</strong> (Apple’s CloudKit service, in that person’s private database). Each member’s iPhone keeps a copy so the app works offline. Nothing is stored with us: we have no server, and we cannot read anyone’s iCloud data.</li>
+    <li><strong>Where the data is.</strong> Shared things, their details, their history (including any photos and the text read from them), and the display names members choose are stored in the <strong>iCloud account of the person who created the household</strong> (Apple’s CloudKit service, in that person’s private database). Each member’s iPhone keeps a copy so the app works offline. Nothing is stored with us: we have no server, and we cannot read anyone’s iCloud data.</li>
     <li><strong>Who can see it.</strong> Only the people the household’s creator invites, using Apple’s standard sharing sheet (a link sent by Messages or Mail). Nothing is public or searchable. Every shared history entry shows who logged it, using the display name that person chose.</li>
     <li><strong>What is not shared.</strong> Your personal things, your notification settings, your Nivli+ purchase. Members do not see each other’s personal things.</li>
     <li><strong>Apple’s role.</strong> iCloud is operated by Apple under <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a> and your iCloud settings. Nivli uses CloudKit only to move your data between your own devices and the people you invited; we receive nothing.</li>
@@ -90,6 +95,16 @@
 
   <h2>Siri and Shortcuts</h2>
   <p>Nivli offers Siri phrases such as “Hey Siri, log air filter in Nivli” through Apple’s App Intents. Understanding your spoken words is done by Siri, which is part of iOS and covered by Apple’s privacy policy and your Siri settings. Once Siri has understood the request, it runs Nivli’s action on your iPhone; Nivli reads or updates its local database and gives Siri the answer. Nivli does not receive audio and does not send anything to a server. Siri and Shortcuts require no extra permission from Nivli.</p>
+
+  <h2>Asking in your own words (Apple’s on-device model)</h2>
+  <p>On iPhones with Apple Intelligence (iPhone 15 Pro and later, on iOS 26), a question that Nivli’s keyword search cannot answer is handed to Apple’s on-device model, which is part of iOS. Other iPhones keep the keyword answers, exactly as before.</p>
+  <ul>
+    <li><strong>What it receives.</strong> A short digest that Nivli builds on your iPhone from your own records: the things most related to your question, with their dates and who logged them, the next reminder, the details you saved, your notes, and the text read from your photos.</li>
+    <li><strong>Where it runs.</strong> On your iPhone. Nivli uses only the model built into iOS. It makes no network request of its own, and there is no account, no server and no API key behind it.</li>
+    <li><strong>What leaves the phone.</strong> Nothing. The question, the digest and the answer stay on the device, and nothing is written outside Nivli’s own storage. We receive nothing, and the App Store privacy label stays <strong>Data Not Collected</strong>.</li>
+    <li><strong>The switch.</strong> Turn it off in Nivli under <strong>Settings › Siri › Answer in your own words</strong>. Nivli then answers with keyword and date matching only.</li>
+  </ul>
+  <p>An answer names the records it used, so you can check it against your own history.</p>
 
   <h2>Purchases (Nivli+)</h2>
   <p>Nivli+ is sold through Apple’s in-app purchase system. Apple handles the payment, your Apple Account, receipts, renewals, and refunds under Apple’s own privacy policy. Nivli only learns from Apple whether Nivli+ is active on your device. Nivli never sees your payment card, billing address, or Apple Account details, and stores no purchase records anywhere except the status Apple provides. You can manage or cancel subscriptions in iPhone Settings › Apple Account › Subscriptions.</p>
