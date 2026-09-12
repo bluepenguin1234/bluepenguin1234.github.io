@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Nivli remembers when you last did something and reminds you when it's time again. Siri-first, private, on your iPhone — and shareable with your household.">
+<title>Nivli — Remember when.</title>
+<style>
+  :root{
+    --bg:#F7F9FA; --ink:#142B39; --text:#1F3442; --muted:#5B6E7A;
+    --card:#FFFFFF; --line:#DCE4E8; --accent:#157F6C; --mint:#5EDCC0; --hero-text:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0E1E29; --ink:#F2F6F7; --text:#D9E2E6; --muted:#9BB0BA;
+           --card:#142B39; --line:#24404F; --accent:#5EDCC0; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text)}
+  body{font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
+  a{color:var(--accent)}
+
+  .hero{background:#142B39;color:var(--hero-text);padding:56px 0 64px}
+  .hero .wrap{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+  .mark{display:inline-flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.01em;font-size:1.1rem}
+  .mark .icon{width:44px;height:44px;border-radius:11px;background:#0F2230;border:1px solid #24404F;display:grid;place-items:center;font-size:1.35rem;font-weight:800;position:relative}
+  .mark .icon::after{content:"";position:absolute;right:8px;bottom:9px;width:8px;height:8px;border-radius:50%;background:#5EDCC0}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;letter-spacing:-.03em;margin:0}
+  .hero h1 span{color:#5EDCC0}
+  .hero p.lead{font-size:1.2rem;max-width:34em;margin:0;color:#D9E2E6}
+  .cta{display:inline-block;background:#5EDCC0;color:#142B39;font-weight:700;text-decoration:none;padding:14px 22px;border-radius:12px;font-size:1.05rem}
+  .cta small{display:block;font-weight:500;font-size:.85rem;opacity:.85}
+  .hero .fine{color:#9BB0BA;font-size:.92rem;margin:0}
+
+  section{padding:48px 0}
+  h2{color:var(--ink);font-size:1.6rem;letter-spacing:-.02em;margin:0 0 20px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grid.two{grid-template-columns:repeat(2,1fr)}
+  @media (max-width:700px){.grid,.grid.two{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{margin:0 0 6px;color:var(--ink);font-size:1.1rem}
+  .card p{margin:0;color:var(--text)}
+  .card .dot{width:12px;height:12px;border-radius:50%;background:var(--mint);margin-bottom:14px}
+
+  .say{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+  .say li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+  .say li b{color:var(--ink)}
+  .say li span{display:block;color:var(--muted);font-size:.95rem}
+
+  .price{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:700px){.price{grid-template-columns:1fr}}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .plan.plus{border-color:var(--mint);box-shadow:0 0 0 3px rgba(94,220,192,.18)}
+  .plan h3{margin:0 0 4px;color:var(--ink)}
+  .plan .amt{font-size:1.35rem;font-weight:700;color:var(--ink);margin:0 0 10px}
+  .plan ul{margin:0;padding-left:1.2em}
+  .plan li{margin:.3em 0}
+  .plan .opts{margin-top:12px;color:var(--muted);font-size:.95rem}
+  .fine{color:var(--muted);font-size:.9rem}
+
+  footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:.92rem}
+  footer nav a{margin-right:18px;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="mark"><span class="icon">N</span> Nivli</div>
+    <h1>Remember <span>when.</span></h1>
+    <p class="lead">Nivli remembers when you last did something — changed the air filter, watered the plants, renewed the passport — and reminds you when it’s time again.</p>
+    <a class="cta" href="https://apps.apple.com/app/id6811270888">Download on the App Store<small>Free · iPhone · iOS 18 or later</small></a>
+    <p class="fine">No account. No tracking. Your things stay on your iPhone — or in your own iCloud when you share them with your household.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>A memory for the upkeep of life</h2>
+    <div class="grid">
+      <div class="card"><div class="dot"></div><h3>Log it once</h3><p>Type or say what you did — “Changed the air filter.” Nivli files it under the right thing and keeps the whole history.</p></div>
+      <div class="card"><div class="dot"></div><h3>Ask any time</h3><p>“When did I last…?” gets a straight answer: 3 months, 2 weeks ago — on June 1. Ask more — “how often?”, “what’s overdue?” — in the app or from Siri.</p></div>
+      <div class="card"><div class="dot"></div><h3>Reminded when it’s time</h3><p>One-off or repeating reminders that roll forward when you log. Notifications with Did it, Tomorrow, Next week.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Snap the label</h2>
+    <div class="grid two">
+      <div class="card"><div class="dot"></div><h3>A photo on any entry</h3><p>The size on the filter box, the receipt, the meter reading. Add it from your photos or take it on the spot — it stays with the entry, on your iPhone.</p></div>
+      <div class="card"><div class="dot"></div><h3>Search what’s printed</h3><p>Nivli reads the text in the photo on your phone, so “16x25” finds the day you bought that filter. Free for everyone.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Share it with your household</h2>
+    <div class="grid two">
+      <div class="card"><div class="dot"></div><h3>One home, one memory</h3><p>Create a household and invite family with Apple’s sharing sheet. Switch a thing to “Share with household” and it shows up on everyone’s iPhone with its whole history.</p></div>
+      <div class="card"><div class="dot"></div><h3>Anyone can log it</h3><p>Whoever changed the filter taps Log now, and the history says “Logged by Sam”. Reminders reach every member, and Did it on any phone updates the rest. Works offline, syncs later.</p></div>
+    </div>
+    <p class="fine">Shared things live in the creator’s own iCloud, seen only by the people they invite. Creating a household is part of Nivli+; joining is free.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Just say it</h2>
+    <ul class="say">
+      <li><b>“Hey Siri, log something in Nivli”</b><span>Siri asks what happened. “I changed the air filter.”</span></li>
+      <li><b>“Hey Siri, log air filter in Nivli”</b><span>Existing things are recognised by name.</span></li>
+      <li><b>“Hey Siri, when did I last change the air filter in Nivli?”</b><span>“3 months, 2 weeks ago — on June 1.”</span></li>
+      <li><b>“Hey Siri, remind me in Nivli”</b><span>Siri asks what and when. “In one year about my passport.”</span></li>
+      <li><b>“Hey Siri, what’s coming up in Nivli?”</b><span>The things due soon.</span></li>
+      <li><b>“Hey Siri, remember something in Nivli”</b><span>“What should I remember?” — “The furnace filter is 16x25x1.” Later: “Ask Nivli” — “What size is the furnace filter?”</span></li>
+      <li><b>“Hey Siri, ask Nivli”</b><span>“What do you want to know?” — “How many times did I water the plants this month?” “What’s overdue?” “What did I do last week?” Type the same into search on Home for an answer card. No AI model, nothing leaves your phone.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Free, with Nivli+ if you want more</h2>
+    <div class="price">
+      <div class="plan">
+        <h3>Free</h3>
+        <p class="amt">$0</p>
+        <ul>
+          <li>Unlimited things and logs</li>
+          <li>Full history and timeline</li>
+          <li>Photos on entries, with the text in them searchable</li>
+          <li>Siri and widgets</li>
+          <li>Up to 3 active reminders</li>
+          <li>Join a household and log shared things</li>
+        </ul>
+      </div>
+      <div class="plan plus">
+        <h3>Nivli+</h3>
+        <p class="amt">$2.99 / month</p>
+        <ul>
+          <li>Unlimited active reminders</li>
+          <li>Custom repeat intervals — “every 45 days”</li>
+          <li>CSV export of your history</li>
+          <li>Create a household to share with family</li>
+        </ul>
+        <p class="opts">Or $19.99 / year, or $39.99 once for lifetime.</p>
+      </div>
+    </div>
+    <p class="fine">US prices; your local price is shown in the app. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period, and are managed in your Apple Account settings. Restore Purchases is always available in the app.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Private by design</h2>
+    <p>Nivli has no account, no servers, no analytics, no advertising, and no third-party code. Your things, logs, and reminders live in the app on your iPhone and in your own device backup. Things you share with your household are stored in the creator’s own iCloud account, visible only to the people invited — never to us. Photos you attach are stored in the app, and the text in them is read on the device. The only permissions it asks for are Notifications, if you set a reminder, and the camera, if you tap Take photo. App Store privacy label: <strong>Data Not Collected</strong>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="https://apps.apple.com/app/id6811270888">App Store</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+    </nav>
+    <p>© 2026 Brian Suchanek. Nivli is not affiliated with Apple. Siri and iPhone are trademarks of Apple Inc.</p>
+  </div>
+</footer>
+
+</body>
+</html>
