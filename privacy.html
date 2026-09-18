@@ -52,8 +52,8 @@
     <li><strong>Your workout log.</strong> For each workout: the date, the start time, the length in minutes, the kind (run, walk, strength and so on) and whether you logged it by hand or it came from Apple Health.</li>
     <li><strong>Your daily step totals.</strong> If you choose a step goal, one number per day: the total steps Apple Health reported for that day. Not individual steps or samples, just the day's total.</li>
     <li><strong>Your streak.</strong> Worked out on the device from the workout log, your step totals and your rest days. The current and longest streak are kept so the app can show them.</li>
-    <li><strong>When each day was won.</strong> For a day your apps opened, Nivli writes down the moment it happened &mdash; one entry per day, the first one only. It is stored so the app can work out how many hours your apps stayed shut across a week. No screen, widget or notification in Nivli shows it, and Nivli does not score or compare it: it does not matter what time of day you earn your apps.</li>
-    <li><strong>Your settings.</strong> Which rule wins your day (a workout, a step goal, or either), your minimum workout length and your step goal, your weekly rest days and any day you took off, whether Apple Health, reminders and the Sunday report are on, the reminder time, your appearance choice, whether strict mode is on and any change it is holding for 24 hours, the day you started your first week, the answers you gave during onboarding &mdash; your first name if you typed one, what brought you to Nivli, how often you move and your own guess at your phone hours &mdash; and whether the subscription is currently valid.</li>
+    <li><strong>When each day was won.</strong> For a day your apps opened, Nivli writes down the moment it happened &mdash; one entry per day, the first one only. Only the date is ever read, to work out when you started using Nivli; the time of day is written down and nothing reads it. No screen, widget or notification in Nivli shows it, and Nivli does not score or compare it: it does not matter what time of day you earn your apps.</li>
+    <li><strong>Your settings.</strong> Which rule wins your day (a workout, a step goal, or either), your minimum workout length and your step goal, your weekly rest days and any day you took off, whether Apple Health and reminders are on, the reminder time, your appearance choice, whether strict mode is on and any change it is holding for 24 hours, the day you started your first week, the answers you gave during onboarding &mdash; your first name if you typed one, what brought you to Nivli, how often you move and your own guess at your phone hours &mdash; and whether the subscription is currently valid.</li>
   </ul>
   <p>Nivli's data is stored in a file that is excluded from iCloud Backup and computer backups, because it can contain workouts read from Apple Health. Setting up a new iPhone means setting Nivli up again; your streak does not move between phones.</p>
 
@@ -80,18 +80,16 @@
   </ul>
 
   <h2>Notifications</h2>
-  <p>Notifications are optional and are asked for once, during onboarding. There are four kinds, every one of them scheduled locally on your iPhone:</p>
+  <p>Notifications are optional and are asked for once, during onboarding. There are three kinds, every one of them scheduled locally on your iPhone:</p>
   <ul>
     <li>a note that your apps have opened, when a workout or your step goal arrives from Apple Health while Nivli is closed;</li>
     <li>an evening reminder at the time you choose, only on a day you have not won yet;</li>
-    <li>the Sunday-evening Your Tempo summary, if you leave it switched on, carrying that week&rsquo;s own minutes and steps;</li>
     <li>if you start a free trial, one reminder two days before it ends, saying what will be charged and where to cancel. It is removed the moment the subscription stops.</li>
   </ul>
   <p>They contain nothing else. Nivli has no push server and receives no remote notifications; nothing about any of them is sent anywhere, because each one is scheduled by the app on your own device. Decline, or turn them off later in iPhone <strong>Settings &rsaquo; Notifications &rsaquo; Nivli</strong>, and the rest of the app works the same.</p>
 
-  <h2>The widget and Your Tempo</h2>
-  <p>The Home Screen and Lock Screen widget, and the weekly Your Tempo report, both use data Nivli already has on your iPhone &mdash; the same workout log, step totals and settings described above. Neither one measures anything new, and neither sends anything anywhere. The widget reads that data on the device to draw its ring and streak. Your Tempo is built on the device too, from the same log; tapping Share turns it into an image on your iPhone and hands it to iOS's own share sheet, which is yours to use or not.</p>
-  <p>Your Tempo is a report on your week's rhythm: of the days you planned to move, how many you won, along with your minutes, your steps as a distance and any record the week set. It says nothing about what time of day anything happened.</p>
+  <h2>The widget</h2>
+  <p>The Home Screen and Lock Screen widget uses data Nivli already has on your iPhone &mdash; the same workout log, step totals and settings described above. It measures nothing new and sends nothing anywhere: it reads that data on the device to draw its ring and streak. The share card a won day offers is made the same way, on the phone, and handed to iOS's own share sheet, which is yours to use or not.</p>
 
   <h2>A small settings file</h2>
   <p>Once at launch, and at most once every six hours after that, Nivli downloads one file from our website: <code>nivli-config.json</code>, which holds the app's own wording and a few switches. It lets us fix a sentence or turn a screen off without shipping a new version.</p>
