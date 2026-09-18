@@ -27,11 +27,6 @@
   p,li{margin:.5em 0}
   ul,ol{padding-left:1.3em}
   a{color:var(--accent)}
-  .phrases{list-style:none;padding:0;margin:12px 0}
-  .phrases li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:8px 0}
-  .phrases li::before{content:"“";color:var(--mint);font-weight:700;margin-right:2px}
-  .phrases li::after{content:"”";color:var(--mint);font-weight:700;margin-left:2px}
-  .phrases small{display:block;color:var(--muted);font-size:.9rem;margin-top:2px}
   .note{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--mint);border-radius:12px;padding:14px 18px;margin:20px 0}
   code{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.1em .35em;font-size:.92em}
   footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
@@ -42,142 +37,134 @@
 <main>
   <header><a href="index.html"><svg class="icon" viewBox="0 0 1024 1024" role="img" aria-label="Nivli icon"><rect width="1024" height="1024" rx="224" fill="#142B39"/><path d="M302 704V312L718 704V432" fill="none" stroke="#FFFFFF" stroke-width="92" stroke-linecap="round" stroke-linejoin="round"/><circle cx="718" cy="312" r="50" fill="#5EDCC0"/></svg> Nivli</a></header>
   <h1>Nivli Support</h1>
-  <p>Nivli remembers when you last did something and reminds you when it’s time again. Log a moment (“Changed the air filter”), ask later (“When did I last change the air filter?”), and set a reminder so it comes back around. Everything stays on your iPhone, unless you choose to share some things with your household through your own iCloud. Requires iOS 18 or later.</p>
+  <p>Nivli holds the apps you choose until you have won the day. Winning it means a workout, or your daily step goal, or either one &mdash; you pick the rule, and you set the number. Log a workout by hand, or connect Apple Health and let a run, a gym session or a walk do it for you. The apps open until midnight, and the day counts. Everything stays on your iPhone. Requires iOS 18 or later, iPhone only.</p>
 
   <div class="note">
-    <p><strong>What’s new in 1.1</strong></p>
-    <ul>
-      <li><strong>Details on every thing</strong> — size, brand, model, where it’s kept, expiry date, a link, who did it, notes. Correct one and Nivli keeps the old value and shows where each value came from.</li>
-      <li><strong>Ask in your own words</strong> — on iPhones with Apple Intelligence, a question the keyword search can’t answer is answered by Apple’s on-device model from a digest of your own records. Nothing leaves the phone, and a switch in <strong>Settings › Siri › Answer in your own words</strong> turns it off. Other iPhones keep the keyword answers.</li>
-      <li><strong>One sentence, several things</strong> — “Hey Siri, ask Nivli”, then “I changed the furnace filter today, its size is 16 by 25 by 1, remind me again in three months.” Siri asks which thing when two match.</li>
-      <li><strong>Next steps on an answer</strong> — <em>Did it</em> (with Undo), <em>Remind me</em> or <em>Change date</em>, <em>Open saved link</em> (it opens the page you saved and nothing else; it never buys anything), <em>Share details</em> (the system share sheet; nothing is sent by itself).</li>
-      <li><strong>Appearance</strong> — Dark (the default), Light, or Match iPhone, under <strong>Settings › Appearance</strong>.</li>
-    </ul>
+    <p><strong>Nivli 3.0 is a new app.</strong> Nivli used to be a memory app for the upkeep of life. Version 3.0 replaces it with this one. If you are looking for the old product, its features are not in this version.</p>
   </div>
 
   <h2>The basics</h2>
   <ul>
-    <li><strong>Log it</strong> — tap <strong>+</strong> and type what you did. Nivli files it under the matching thing or creates a new one. Use <em>Log a past date</em> on a thing to backfill.</li>
-    <li><strong>Ask</strong> — open a thing to see “3 months ago” and the exact date, or ask Siri. For anything else — “how often do I…?”, “what’s overdue?” — say “Hey Siri, ask Nivli” or type the question into search on Home.</li>
-    <li><strong>Remind</strong> — on a thing, set a one-off date or a repeat like “every 3 months”. Logging a repeating thing schedules the next reminder automatically.</li>
-    <li><strong>Details</strong> — save facts on a thing: size, brand, model, where it’s kept, expiry date, link, who did it. Ask for one later (“what size is the furnace filter?”). A correction keeps the old value.</li>
-    <li><strong>Notifications</strong> — each reminder offers <em>Did it</em>, <em>Tomorrow</em>, and <em>Next week</em> without opening the app.</li>
-    <li><strong>History</strong> — every log across all things, newest first, searchable.</li>
-    <li><strong>Photos</strong> — attach a photo to an entry (<em>Add photo</em> or <em>Take photo</em>). Nivli reads the text in it on your phone, so you can search for “16x25” later.</li>
-    <li><strong>Household</strong> — share chosen things with family. Everyone sees the history, anyone can log, and each entry shows who did it. See the questions below.</li>
+    <li><strong>Apps that wait</strong>: the apps, categories and websites you chose during onboarding. iOS shields them; Nivli never sees their names.</li>
+    <li><strong>The rule</strong>: what wins your day &mdash; a workout, a step goal, or either one. Change it any time in <strong>Settings</strong>.</li>
+    <li><strong>Log a workout</strong>: the button on Home. Pick a kind and a length, tap <em>Log it</em>, done.</li>
+    <li><strong>Apple Health</strong>: optional and read-only. A workout recorded by your Apple Watch, or by any app that writes to Health, wins the day on its own &mdash; and so does reaching your step goal.</li>
+    <li><strong>Minimum</strong>: the length a workout has to reach to count. Default 20 minutes; choose 10, 15, 20, 30, 45 or 60.</li>
+    <li><strong>Step goal</strong>: 5,000, 7,500, 10,000, 12,500 or 15,000 steps a day, counted by Apple Health.</li>
+    <li><strong>Streak</strong>: the run of days ending today in which you either won the day or took a rest day.</li>
+    <li><strong>Rest days</strong>: weekly days off, plus <em>Take today off</em> for a one-off.</li>
+    <li><strong>Strict mode</strong>: while it is on, every change that makes the day easier waits 24 hours.</li>
+    <li><strong>Reminder</strong>: an optional evening nudge if you have not won the day yet.</li>
+    <li><strong>Your Tempo</strong>: your week&rsquo;s rhythm, with an optional summary on Sunday evening.</li>
+    <li><strong>Widget</strong>: the ring, your streak and whether your apps are waiting, on the Home Screen or the Lock Screen. Tap it to log a workout.</li>
   </ul>
-
-  <h2>Siri phrases</h2>
-  <p>Say “Hey Siri” (or hold the side button), then:</p>
-  <ul class="phrases">
-    <li>Log something in Nivli<small>Siri asks “What happened?” — answer, for example, “I changed the air filter.”</small></li>
-    <li>Log air filter in Nivli<small>Works for any thing you already have, by name.</small></li>
-    <li>When did I last change the air filter in Nivli?</li>
-    <li>Remind me in Nivli<small>Siri asks what and when — for example, “In one year about my passport.”</small></li>
-    <li>What’s coming up in Nivli?</li>
-    <li>Remember something in Nivli<small>Siri asks “What should I remember?” — say “the furnace filter is 16x25x1.” Later: “Ask Nivli” — “What size is the furnace filter?” “Tell Nivli to remember something” and “Save a note in Nivli” work too.</small></li>
-    <li>Log this in Nivli<small>On iPhones with Apple Intelligence, Siri may also understand “this” while a thing is open on screen. The phrases above are the reliable ones.</small></li>
-    <li>Ask Nivli<small>Siri asks “What would you like to remember, ask, or do?” — then answer in plain words: “how many times did I water the plants this month?”, “what's overdue?”, “what did I do last week?”. You can also say several things at once: “I changed the furnace filter today, its size is 16 by 25 by 1, remind me again in three months.” Siri asks which thing when two match. “Ask Nivli a question” and “Check Nivli” work too.</small></li>
-  </ul>
-  <p>The same phrases are listed in the app under <strong>Settings › Siri › Talk to Nivli with Siri</strong>, where you can also add them to the Shortcuts app. Say the phrase as written; details such as the question or the fact are given when Siri asks.</p>
 
   <h2>Frequently asked questions</h2>
 
-  <h3>Reminders aren’t arriving</h3>
+  <h3>How do I change what wins my day?</h3>
+  <p>Open Nivli and tap the gear for <strong>Settings</strong>. Under <strong>How you win the day</strong>, the <em>Win with</em> menu switches between <em>A workout</em>, <em>A step goal</em> and <em>Either one</em>. Right below it are the numbers that rule uses: the <strong>step goal</strong>, and, further down, the <strong>minimum</strong> workout length. Only the numbers your rule actually measures are shown, so a step-goal day never asks you to set a workout minimum you will never be held to.</p>
+  <p>Changing the rule does not rewrite your history. Every past day is judged by the rule in force when you look at it, so switching to a stricter rule can change what an earlier week looks like &mdash; nothing is lost, it is simply read a different way.</p>
+  <p>If strict mode is on, a change that makes the day easier (a lower step goal, a shorter minimum, a rule that is easier to meet) will wait 24 hours before it takes effect. A change that makes the day harder happens immediately.</p>
+
+  <h3>What is strict mode, and how do I cancel a change that is waiting?</h3>
+  <p>Strict mode is a promise you cannot talk yourself out of at eight in the evening. Turn it on in <strong>Settings &rsaquo; Strict mode</strong>. From then on:</p>
+  <ul>
+    <li>Anything that <strong>lowers the bar</strong> &mdash; a smaller step goal, a shorter minimum, an easier rule, an extra rest day, turning Apple Health off, removing apps from the list, and turning strict mode itself off &mdash; is written down and applied <strong>24 hours later</strong>. The switch springs back and Nivli buzzes once to say &ldquo;not yet&rdquo;.</li>
+    <li>Anything that <strong>raises the bar</strong> happens at once. There is no reason to protect you from your own ambition.</li>
+    <li><strong>Take today off</strong> is refused outright rather than queued. A day off that arrives tomorrow is not a day off.</li>
+    <li>Deleting your data, and deleting Nivli, are <strong>never</strong> delayed.</li>
+  </ul>
+  <p>Everything that is waiting appears in a <strong>Waiting</strong> section in Settings, each line naming the change and how long it has left (&ldquo;Applies in 23 h 12 m&rdquo;), with a <strong>Cancel</strong> button beside it. Tapping Cancel simply drops the change &mdash; nothing has happened yet, so there is nothing to undo, and cancelling is never itself delayed. The setting it belongs to also grows a small clock line, so a switch that springs back never looks like a bug. The pill at the top of Home shows the same thing at a glance: <em>Strict</em>, or <em>2 queued &middot; 23h</em>.</p>
+  <p>Asking twice replaces rather than stacks: if you lower the step goal and then lower it again, one change is waiting, the second one.</p>
+
+  <h3>My steps are not updating</h3>
+  <p><strong>Tap the steps number on Home.</strong> That is the fix, and it works every time: it asks Apple Health for today&rsquo;s count there and then, and if the walk you just finished crosses your goal, your apps open on the spot.</p>
+  <p>The reason it is needed: Apple only wakes an app for a changed step count about once an hour &mdash; that is the shortest interval iOS allows for steps &mdash; so between those wake-ups the number on screen can be behind your legs. Once the reading is more than fifteen minutes old, Nivli says so in mint under the number (&ldquo;Steps updated 24 min ago&rdquo;), which is your cue to tap it. Opening Nivli at all also forces a fresh read.</p>
+  <p>If tapping it changes nothing, check that <strong>Steps</strong> is switched on in the <strong>Health</strong> app under <strong>Sharing &rsaquo; Apps &rsaquo; Nivli</strong>. Health permissions are all-or-nothing per type and iOS never tells an app it was refused, so this is the one thing worth checking twice.</p>
+
+  <h3>I blocked a whole category, but some of its apps still open</h3>
+  <p>Re-tick the category. Open <strong>Settings &rsaquo; Apps that wait</strong> (or <em>Edit</em> on the apps card on Home), untick the category, tick it again, and close the picker.</p>
+  <p>Why: when you tick a whole category, iOS can hand Nivli either the category on its own or the category <em>and</em> every app inside it. The category on its own has proved to leave some apps open. Nivli now always asks for the second kind, so ticking a category again records every app in it as well &mdash; which is also why, after re-ticking, the picker shows a tick beside each app in that category. A selection made by an older version of Nivli keeps its old shape until you edit it once.</p>
+
+  <h3>What counts as a workout?</h3>
+  <p>Any workout, from either source, that is at least as long as your minimum.</p>
+  <ul>
+    <li><strong>Logged by you.</strong> Pick one of the nine kinds (run, walk, strength, cycle, swim, yoga, HIIT, sport, other) and a length. It is an honour system; Nivli believes you.</li>
+    <li><strong>From Apple Health.</strong> Any workout saved to Health today, by your Apple Watch or by another app, counted by its recorded duration.</li>
+  </ul>
+  <p>Your minimum is in <strong>Settings</strong>, and the default is 20 minutes. A shorter session is still kept in your history, it just does not win the day. The Log sheet tells you which it will be before you save. Nivli does not look at intensity, heart rate, distance or calories, and nothing anywhere in Nivli records what time of day you won.</p>
+
+  <h3>I worked out, but my apps are still locked</h3>
+  <p>Work through these in order.</p>
   <ol>
-    <li>Open iPhone <strong>Settings › Notifications › Nivli</strong> and make sure <em>Allow Notifications</em> is on, with Lock Screen and Banners selected.</li>
-    <li>Check <strong>Settings › Focus</strong>. A Focus mode (Do Not Disturb, Sleep, Work) can silence Nivli unless it is on that Focus’s allowed list.</li>
-    <li>Check <strong>Settings › Notifications › Scheduled Summary</strong>. If Nivli is included, its reminders are held until the summary time — remove it from the summary for on-time reminders.</li>
-    <li>In Nivli, open <strong>Settings</strong>; the Notifications line shows whether permission is granted and links straight to the iOS setting if not.</li>
-    <li>Open the thing and confirm the reminder is set and its date is in the future. Without Nivli+ you can have up to 3 active reminders; a 4th needs Nivli+.</li>
+    <li><strong>Open Nivli once.</strong> If you logged the workout by hand, the shields lift straight away. If it came from Apple Health while your phone was in your pocket, opening Nivli always forces the check.</li>
+    <li><strong>Give Health a moment.</strong> A workout ended on an Apple Watch has to sync to the iPhone&rsquo;s Health app before Nivli can see it. That is usually seconds, but it can take a few minutes, and it will not happen at all while the watch is out of range.</li>
+    <li><strong>Check the length.</strong> A 12-minute walk does not clear a 20-minute minimum. Home shows today&rsquo;s workout and its length; lower the minimum in Settings if it is set higher than you meant.</li>
+    <li><strong>Check the day.</strong> Nivli uses your iPhone&rsquo;s own calendar day, midnight to midnight. A workout finished at 11:58 pm wins that day, not the next one.</li>
+    <li><strong>Close the app and open it again.</strong> An app you already had open when the workout landed keeps running; iOS only applies and removes shields as apps are opened.</li>
   </ol>
 
-  <h3>Why does Siri say it can’t do that?</h3>
+  <h3>An app I blocked was already open, and it kept working</h3>
+  <p>That is how iOS works and Nivli cannot change it. A shield stops an app from being opened; it cannot close one that is already running. Swipe the app away in the App Switcher and the shield appears the next time you tap its icon.</p>
+
+  <h3>How do I change which apps are locked?</h3>
+  <p>Open Nivli, go to <strong>Settings &rsaquo; Apps that wait</strong>, and tap to open Apple&rsquo;s picker. Add or remove apps, whole categories and websites, then close the picker. You can also tap <em>Edit</em> on the apps card on Home. Adding more applies immediately; under strict mode, removing some waits 24 hours.</p>
+
+  <h3>How do I stop Nivli blocking anything?</h3>
   <ul>
-    <li>Nivli’s Siri phrases need <strong>iOS 18 or later</strong> and the app must be installed and <strong>opened at least once</strong> since installation. After a fresh install, give Siri a minute or two to learn the new phrases.</li>
-    <li>Include the words <strong>“in Nivli”</strong>. Without them Siri may hand the request to Reminders or Notes.</li>
-    <li>Use the phrases above as written — Siri matches the phrase itself closely. What you say <em>after</em> Siri asks can be a longer sentence: “I changed the furnace filter today, its size is 16 by 25 by 1, remind me again in three months.”</li>
-    <li><em>Ask Nivli</em> and <em>Get a detail</em> need the iPhone unlocked, because details can be private. Unlock the phone and ask again.</li>
-    <li>Make sure Siri is enabled: <strong>Settings › Apple Intelligence &amp; Siri</strong> (or <strong>Settings › Siri</strong>), and that <strong>Settings › Apps › Nivli › Siri</strong> allows Nivli to work with Siri.</li>
-    <li>If Siri says the thing wasn’t found, say it the way it is named in Nivli, or use “Log something in Nivli” and answer Siri’s question.</li>
+    <li><strong>Keep the app, unlock everything:</strong> <strong>Settings &rsaquo; Apps that wait</strong>, clear the selection so nothing is chosen. With an empty selection Nivli shields nothing, on any day.</li>
+    <li><strong>Just today:</strong> <strong>Settings &rsaquo; Take today off</strong> (not available while strict mode is on).</li>
+    <li><strong>Remove it completely:</strong> delete the Nivli app. iOS lifts every shield it set and removes its data with it. You can also switch Screen Time authorization off in iPhone <strong>Settings &rsaquo; Screen Time</strong>.</li>
   </ul>
+  <p>There is no hidden hold on your phone. Nivli only shields what you picked, and only while it is installed, subscribed and set up.</p>
 
-  <h3>How do I attach a photo to an entry?</h3>
-  <p>While logging — in the capture sheet or in <strong>Log a past date</strong> — tap <strong>Add photo</strong> to choose one from your library, or <strong>Take photo</strong> to use the camera. To add, change or remove a photo on an existing entry, open the thing, tap the entry to edit it, and use the same buttons (the × on the preview removes it). One photo per entry; it is reduced in size and kept inside Nivli on your iPhone, not in your photo library.</p>
+  <h3>How do rest days work?</h3>
+  <p>In <strong>Settings &rsaquo; Rest days</strong> you can mark any weekdays as rest days. On a rest day nothing is locked, and your streak is neither broken nor grown. For a one-off, use <strong>Take today off</strong> on the same screen; it applies to today only and confirms first. New installs start with no rest days, so every day counts until you set some.</p>
 
-  <h3>Can I find an entry by what’s written in the photo?</h3>
-  <p>Yes. Nivli reads the text in each photo on your iPhone (nothing is uploaded) and shows it under the photo as <strong>Text in this photo</strong>. Search on Home or History for any word from it — the size on a filter box, a part number — and the entry comes up. Siri’s “when did I last…” looks at photo text too. If the text under the photo is wrong or missing, retake the photo closer, straight on and in good light; small or curved print is the usual culprit.</p>
-
-  <h3>Why did Nivli ask to use the camera?</h3>
-  <p>Only because you tapped <strong>Take photo</strong>. The camera is used just for that moment, and you can say no and still add photos from your library — choosing from the library never needs a permission, because Apple’s picker hands Nivli only the photo you select. You can change your answer any time in iPhone <strong>Settings › Apps › Nivli › Camera</strong>.</p>
-
-  <h3>How do I share things with my family?</h3>
+  <h3>Apple Health is not winning the day for me</h3>
   <ol>
-    <li>One person creates the household: <strong>Settings › Household › Create household</strong> (or tap the people icon on Home). Give it a name and enter your own name as you want it to appear on shared history. Creating a household is part of Nivli+; you need to be signed in to iCloud on your iPhone.</li>
-    <li>Tap <strong>Invite people</strong>. Apple’s sharing sheet opens; send the link by Messages or Mail to each family member. They tap the link, Nivli opens, and they are in. Members do <em>not</em> need Nivli+.</li>
-    <li>Open any thing and turn on <strong>Share with household</strong>. It appears on everyone’s phone with its full history. When you add a new thing, the capture sheet also offers the same toggle.</li>
+    <li>Open the <strong>Health</strong> app, then <strong>Sharing &rsaquo; Apps &rsaquo; Nivli</strong>, and make sure <strong>Workouts</strong> and <strong>Steps</strong> are switched on. Health permissions are all-or-nothing per type, and iOS never tells an app it was refused, so this is the first thing to check.</li>
+    <li>Check the workout is actually in Health: <strong>Browse &rsaquo; Activity &rsaquo; Workouts</strong>. If it is not there, the app or watch that recorded it did not save it, and Nivli has nothing to read.</li>
+    <li>Make sure Apple Health is on inside Nivli, under <strong>Settings &rsaquo; Apple Health</strong>.</li>
+    <li>Check the workout is long enough for your minimum and is dated today.</li>
+    <li>Open Nivli once, or tap the steps number on Home. Either forces an import, whatever the background state.</li>
   </ol>
-  <p>Anyone in the household can log a shared thing, and the entry shows “Logged by” their name. Photos on shared entries are shared too. Reminders on shared things fire on every member’s iPhone; <em>Did it</em> on any phone updates everyone. Things you don’t switch on stay private to you.</p>
+  <p>Nivli only ever reads workouts and daily step totals, and never writes anything to Health. There are two switches and both matter: <strong>Settings &rsaquo; Apple Health</strong> inside Nivli, which is also the off switch &mdash; turning it off stops Nivli watching straight away &mdash; and <strong>Health &rsaquo; Sharing &rsaquo; Apps &rsaquo; Nivli</strong>, which is the only place iOS lets you grant or withdraw the read itself. If you would rather not use Health at all, logging by hand does exactly the same job &mdash; but a step goal cannot work without it, because Health is the only place a step comes from.</p>
 
-  <h3>A family member joined but can’t see my things</h3>
+  <h3>What is Your Tempo?</h3>
+  <p>It is a report on your week&rsquo;s <em>rhythm</em>, not your week&rsquo;s clock: of the days you planned to move, how many you won, along with your minutes, your steps turned into a distance, and any record the week set. Open it from the week card on Home, or leave the Sunday-evening summary switched on in Settings. Nivli never records or scores what time of day you earned anything.</p>
+
+  <h3>Can I use Nivli without a subscription?</h3>
+  <p>Only during the free week. Nivli starts with <strong>7 days free</strong>, and after that it is <strong>$4.99 a month</strong> or <strong>$29.99 a year</strong> (about $2.50 a month). There is no free tier. Without a valid subscription Nivli shields nothing at all, so nothing gets stuck locked if you let it lapse. If you have bought Nivli before on this Apple Account, tap <strong>Restore Purchases</strong> on the paywall or in Settings. The free week is offered once per Apple Account, so if you have already had one you will see the ordinary price instead.</p>
+
+  <h3>How do I cancel the free trial, or the subscription?</h3>
+  <p>Both are cancelled the same way, and both are managed by Apple rather than by us: iPhone <strong>Settings &rsaquo; [your name] &rsaquo; Subscriptions &rsaquo; Nivli &rsaquo; Cancel Subscription</strong>, or <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>.</p>
   <ul>
-    <li>Only things switched to <strong>Share with household</strong> are shared. Open the thing on your phone and check the switch is on; personal things never appear on other phones.</li>
-    <li>Check <strong>Settings › Household</strong> on your phone. The member should be listed; “pending” means they haven’t opened the invitation link yet. If they are missing, send the invitation again.</li>
-    <li>Both phones need iCloud: <strong>Settings › [your name] › iCloud</strong> signed in, with iCloud Drive on. Nivli shows “Sign in to iCloud on this iPhone to use Household” when it isn’t.</li>
-    <li>Both phones need a connection at some point. Changes made offline are kept and sent as soon as the phone is back online; opening Nivli forces a refresh. Give it a minute after a change.</li>
-    <li>Make sure the member opened the link on the iPhone they use Nivli on, with the Apple Account you invited. A link opened on a different account joins nothing.</li>
-    <li>If your iCloud storage is full, new changes can’t be saved to iCloud until you free space or buy more (Apple’s storage, not ours).</li>
+    <li><strong>During the free week:</strong> cancel at least 24 hours before it ends and you are not charged at all. You keep Nivli until the seventh day. Nivli also sends you one reminder two days before the trial ends, so the date does not creep up on you.</li>
+    <li><strong>After that:</strong> cancel at least 24 hours before the renewal date to avoid being charged for the next period; you keep access until the period you have paid for ends.</li>
   </ul>
+  <p>Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
 
-  <h3>How do I leave a household, or stop sharing?</h3>
-  <p><strong>Members:</strong> <strong>Settings › Household › Leave household</strong>. The shared things are removed from your iPhone; your own personal things are untouched, and nothing you logged is deleted for the others. <strong>The creator:</strong> <strong>Settings › Household › Stop sharing</strong> deletes the household from your iCloud, removes the shared things from everyone else’s phone, and keeps them on your phone as personal things with their history. To take just one thing private again, turn off <em>Share with household</em> on that thing. You can only be in one household at a time; leave one before joining another.</p>
+  <h3>I bought Nivli lifetime in an older version</h3>
+  <p>It still works. The lifetime purchase is not sold any more, but it is honoured: tap <strong>Restore Purchases</strong> and Nivli unlocks as usual. The same goes for a yearly subscription bought before 3.0.</p>
 
-  <h3>What can I ask Nivli?</h3>
-  <p>Say <strong>“Hey Siri, ask Nivli”</strong> (Siri replies “What do you want to know?”) or type the question into the search field on Home, where the answer appears as a card above the results. Nivli understands these shapes, in plain words:</p>
-  <ul>
-    <li>“When did I last <em>change the filter</em>?”, “last time I <em>changed the filter</em>”, or just the thing’s name</li>
-    <li>“How many times did I <em>water the plants</em> this week / this month / this year / last month / in the last 30 days?”</li>
-    <li>“How often do I <em>change the filter</em>?”</li>
-    <li>“Did I <em>feed the dog</em> today?” / “…this week?”</li>
-    <li>“What’s overdue?” and “What’s coming up?” / “What’s next?”</li>
-    <li>“What did I do this week / last week / yesterday / this month?”</li>
-  </ul>
-  <p>It also answers <em>what / which / where / who</em> questions from the details you saved, falling back to your notes and to text read in photos: “what size is the furnace filter?” → “Furnace filter: size 16x25x1.” And it finds things by photo text (“when did I last buy 16x25x1”). These answers come from keyword and date matching on your own history, on your phone, so the same question always gets the same answer. If Nivli says it couldn’t find something, use the thing’s name as it appears in the app, or one of the shapes above. Free for everyone.</p>
-  <p>On iPhones with Apple Intelligence (iPhone 15 Pro and later, on iOS 26), a question that none of these shapes fit — “is it time to do the filter yet?” — goes to Apple’s on-device model instead of coming back empty. It receives a digest of your own records and nothing else, it runs on the phone, and the answer names the records it used. Nothing leaves your iPhone. Turn it off in <strong>Settings › Siri › Answer in your own words</strong>; other iPhones keep the keyword answers. Asking needs an unlocked iPhone, because details can be private.</p>
+  <h3>Can Nivli block apps on my child&rsquo;s phone?</h3>
+  <p>No. Nivli asks for Screen Time authorization for the iPhone it is installed on, for the person using it. It has no parental, family or child features and cannot manage another device. For that, use Apple&rsquo;s own Screen Time and Family Sharing.</p>
 
-  <h3>How do I save a detail, like a filter size — and correct it later?</h3>
-  <p>Say <strong>“Hey Siri, remember something in Nivli”</strong> and answer “What should I remember?” with the fact — “the furnace filter is 16x25x1”. Nivli saves it as a <strong>detail</strong> on the matching thing (size, brand, model, where it’s kept, expiry date, link, who did it, or a plain note), or creates a thing named after it (“Furnace filter”). If two things match, Siri asks which one. In the app, type <em>“Remember that …”</em> or <em>“Note that …”</em> in the capture sheet; the switch at the top changes to <strong>Note</strong>. Notes can also be edited on the thing’s edit screen.</p>
-  <p>Details are listed on the thing under <strong>Details</strong>. Saying a new size corrects it and keeps the old value: tap a detail to see its history, where each value came from (Siri, typed, a note, a photo, a household member), and restore an earlier value. If two people in a household saved different values while offline, both are kept and the thing shows that there is more than one; pick the one you want. Ask later with “Hey Siri, ask Nivli” and answer with “what size is the furnace filter?”, or type the question into search on Home. In the Shortcuts app, <strong>Get a detail</strong> and <strong>Save a detail</strong> do the same inside a shortcut.</p>
+  <h3>Can I get around it?</h3>
+  <p>Easily, if you want to. You can clear your selection, take the day off, or delete the app at any moment. Strict mode makes the first two slower, not impossible. Nivli is a speed bump you agreed to, not a lock someone else holds the key to.</p>
 
-  <h3>I tapped Did it on the widget — why does the reminder update only when I open the app?</h3>
-  <p>The <strong>Did it</strong> button on the Home Screen widgets logs the thing without opening Nivli. The widget says <strong>“Logged · syncs when Nivli opens”</strong> straight away, but iOS gives widgets only a moment to run and no access to the app’s database, so the actual history entry and the rolled-forward reminder are written the next time Nivli runs. That happens when you open the app, when you ask Siri something, when you tap a button on a Nivli notification, or when a household change arrives — usually within minutes, and always the next time you open Nivli. Nothing is lost in between: the tap is stored safely on your phone until then.</p>
-
-  <h3>Siri shows a card, or knows what’s on screen — is that Nivli or Apple?</h3>
-  <p>Apple. Nivli provides its actions to Siri through Apple’s App Intents; Siri decides how to present them. On iOS 18 and later Siri can show a card with the thing, its last time, next reminder, latest photo and its details (or the first note), and can understand “log this in Nivli” for the thing open on screen. On iPhones that support Apple Intelligence, Siri and Spotlight can also find your things by meaning; Spotlight sees only titles and dates, never your details or notes. Which of these you get depends on your iPhone model, iOS version and Siri settings — Nivli has no assistant of its own and no wake word other than “Hey Siri”.</p>
-
-  <h3>How do I restore Nivli+ on a new phone?</h3>
-  <p>Sign in to the same Apple Account you used to buy it, then in Nivli go to <strong>Settings › Restore Purchases</strong> (just below Nivli+). The same button is on the Nivli+ purchase screen. Restoring is free and can be repeated as often as you like. Because your things and history live on the phone, they come across with your iPhone backup, not with the purchase. Shared household things come back on their own once the new phone is signed in to the same iCloud account.</p>
-
-  <h3>How do I cancel or change my subscription?</h3>
-  <p>Subscriptions are managed by Apple: iPhone <strong>Settings › [your name] › Subscriptions › Nivli+</strong>. Cancel at least 24 hours before the renewal date to avoid being charged for the next period. The Lifetime option is a one-time purchase and has nothing to cancel. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+  <h3>Does Nivli see what I do on my phone?</h3>
+  <p>No. The apps you choose reach Nivli as opaque tokens that only iOS can resolve, so it cannot read their names, let alone your usage. It has no server, no analytics and no third-party code. See the <a href="privacy.html">privacy policy</a> for the detail.</p>
 
   <h3>How do I delete my data?</h3>
-  <p>Delete individual things or logs inside the app (swipe, or use the thing’s menu). To remove everything, delete the Nivli app from your iPhone. If you created a household, tap <strong>Stop sharing</strong> first so the shared things are deleted from your iCloud as well. Nivli keeps no copy anywhere else, so there is nothing further to request. If you use iCloud Backup, the data will disappear from future backups once the app is gone.</p>
+  <p>Use <strong>Settings &rsaquo; Reset &rsaquo; Turn off Nivli and delete my data</strong> inside Nivli to erase your workouts, streak, selection and settings, or delete the app to remove everything at once. Neither is ever delayed, whatever strict mode says. There is no copy anywhere else, so there is nothing further to request.</p>
 
-  <h3>Can I move Nivli to a new iPhone?</h3>
-  <p>Yes — restore the new phone from your iCloud or computer backup, or use Quick Start. Nivli’s data is part of the app’s backup. There is no separate account. Household things also arrive on their own once the new phone is signed in to the same iCloud account.</p>
-
-  <h3>What does Nivli+ include, and what is free?</h3>
-  <p>Free: unlimited things and logs, full history and timeline, details on every thing, Ask Nivli (including asking in your own words on iPhones with Apple Intelligence), Siri, widgets, and up to 3 active reminders. Nivli+: unlimited active reminders, custom repeat intervals such as “every 45 days”, CSV export, and creating a household (joining one someone else created is free). Nivli+ is $2.99/month, $19.99/year, or $39.99 once (US prices; your local price is shown in the app).</p>
-
-  <h3>How do I export my history?</h3>
-  <p>With Nivli+, go to <strong>Settings › Your data › Export history as CSV</strong> to create a CSV file and share it to Files, Mail, or another app.</p>
-
-  <h3>The widget shows old information</h3>
-  <p>Widgets refresh on iOS’s schedule, usually within a few minutes of a change. Opening Nivli refreshes them straight away.</p>
+  <h3>I changed iPhone</h3>
+  <p>Nivli&rsquo;s data is stored in a file that is excluded from iCloud Backup and computer backups, because it can contain workouts read from Apple Health. Setting up a new iPhone means setting Nivli up again; your streak does not move between phones. Pick your apps again, grant Screen Time and Health on the new device, and today is day one. There is no account to sign in to, and your subscription follows your Apple Account; tap <strong>Restore Purchases</strong> if the paywall appears.</p>
 
   <div class="note">
-    <p><strong>Contact</strong><br>Email <a href="mailto:suchanekbs@gmail.com">suchanekbs@gmail.com</a>. Include your iOS version (Settings › General › About) and, if it helps, a screenshot. Please don’t send personal data you would rather keep private — we never need it to help.</p>
+    <p><strong>Contact</strong><br>Email <a href="mailto:suchanekbs@gmail.com">suchanekbs@gmail.com</a>. Include your iOS version (Settings &rsaquo; General &rsaquo; About) and, if it helps, a screenshot. Please do not send personal data you would rather keep private; we never need it to help.</p>
   </div>
 
   <footer>

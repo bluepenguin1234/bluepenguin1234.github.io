@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="Nivli remembers when you last did something and reminds you when it's time again. Siri-first, private, on your iPhone — and shareable with your household.">
+<meta name="description" content="Nivli holds the apps you choose until you have won the day — a workout, or your step goal. 7 days free, then $4.99 a month or $29.99 a year. Everything stays on your iPhone.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='224' fill='%23142B39'/%3E%3Cpath d='M302 704V312L718 704V432' fill='none' stroke='%23FFFFFF' stroke-width='92' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='718' cy='312' r='50' fill='%235EDCC0'/%3E%3C/svg%3E">
-<title>Nivli — Remember when.</title>
+<title>Nivli — Get a win first. Then scroll.</title>
 <style>
   :root{
     --bg:#F7F9FA; --ink:#142B39; --text:#1F3442; --muted:#5B6E7A;
@@ -26,6 +26,7 @@
   .hero .wrap{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
   .mark{display:inline-flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.01em;font-size:1.1rem}
   .mark .icon{width:44px;height:44px;display:block;flex:0 0 auto}
+  .hero .eyebrow{margin:0 0 -10px;color:#5EDCC0;font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
   .hero h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;letter-spacing:-.03em;margin:0}
   .hero h1 span{color:#5EDCC0}
   .hero p.lead{font-size:1.2rem;max-width:34em;margin:0;color:#D9E2E6}
@@ -36,27 +37,18 @@
   section{padding:48px 0}
   h2{color:var(--ink);font-size:1.6rem;letter-spacing:-.02em;margin:0 0 20px}
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .grid.two{grid-template-columns:repeat(2,1fr)}
-  @media (max-width:700px){.grid,.grid.two{grid-template-columns:1fr}}
+  @media (max-width:700px){.grid{grid-template-columns:1fr}}
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
   .card h3{margin:0 0 6px;color:var(--ink);font-size:1.1rem}
   .card p{margin:0;color:var(--text)}
-  .card .dot{width:12px;height:12px;border-radius:50%;background:var(--mint);margin-bottom:14px}
+  .card .step{width:28px;height:28px;border-radius:50%;background:var(--mint);color:#142B39;font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
 
-  .say{list-style:none;padding:0;margin:0;display:grid;gap:10px}
-  .say li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
-  .say li b{color:var(--ink)}
-  .say li span{display:block;color:var(--muted);font-size:.95rem}
-
-  .price{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  @media (max-width:700px){.price{grid-template-columns:1fr}}
-  .plan{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
-  .plan.plus{border-color:var(--mint);box-shadow:0 0 0 3px rgba(94,220,192,.18)}
+  .plan{background:var(--card);border:1px solid var(--mint);box-shadow:0 0 0 3px rgba(94,220,192,.18);border-radius:16px;padding:22px;max-width:30em}
   .plan h3{margin:0 0 4px;color:var(--ink)}
-  .plan .amt{font-size:1.35rem;font-weight:700;color:var(--ink);margin:0 0 10px}
+  .plan .amt{font-size:1.35rem;font-weight:700;color:var(--ink);margin:0 0 4px}
+  .plan .then{color:var(--muted);margin:0 0 12px;font-size:.95rem}
   .plan ul{margin:0;padding-left:1.2em}
   .plan li{margin:.3em 0}
-  .plan .opts{margin-top:12px;color:var(--muted);font-size:.95rem}
   .fine{color:var(--muted);font-size:.9rem}
 
   footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:.92rem}
@@ -68,107 +60,60 @@
 <header class="hero">
   <div class="wrap">
     <div class="mark"><svg class="icon" viewBox="0 0 1024 1024" role="img" aria-label="Nivli icon"><rect width="1024" height="1024" rx="224" fill="#142B39"/><path d="M302 704V312L718 704V432" fill="none" stroke="#FFFFFF" stroke-width="92" stroke-linecap="round" stroke-linejoin="round"/><circle cx="718" cy="312" r="50" fill="#5EDCC0"/></svg> Nivli</div>
-    <h1>Remember <span>when.</span></h1>
-    <p class="lead">Nivli remembers when you last did something — changed the air filter, watered the plants, renewed the passport — and reminds you when it’s time again.</p>
-    <a class="cta" href="https://apps.apple.com/app/id6811270888">Download on the App Store<small>Free · iPhone · iOS 18 or later</small></a>
-    <p class="fine">No account. No tracking. Your things stay on your iPhone — or in your own iCloud when you share them with your household.</p>
+    <p class="eyebrow">Nivli counts wins, not hours.</p>
+    <h1>Get a win first. <span>Then scroll.</span></h1>
+    <p class="lead">Nivli holds the apps you choose until you&rsquo;ve won the day &mdash; a workout, or your step goal, whichever you pick. Log it, or let Apple Health prove it, and everything opens until midnight.</p>
+    <a class="cta" href="https://apps.apple.com/app/id6811270888">Download on the App Store<small>7 days free, then $4.99 / month or $29.99 / year · iPhone · iOS 18 or later</small></a>
+    <p class="fine">No account. No server. Nothing collected. Nivli never learns which apps you picked.</p>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>A memory for the upkeep of life</h2>
+    <h2>How it works</h2>
     <div class="grid">
-      <div class="card"><div class="dot"></div><h3>Log it once</h3><p>Type or say what you did — “Changed the air filter.” Nivli files it under the right thing and keeps the whole history.</p></div>
-      <div class="card"><div class="dot"></div><h3>Ask any time</h3><p>“When did I last…?” gets a straight answer: 3 months, 2 weeks ago — on June 1. Ask more — “how often?”, “what’s overdue?” — in the app or from Siri.</p></div>
-      <div class="card"><div class="dot"></div><h3>Reminded when it’s time</h3><p>One-off or repeating reminders that roll forward when you log. Notifications with Did it, Tomorrow, Next week.</p></div>
+      <div class="card"><div class="step">1</div><h3>Choose the apps that wait</h3><p>Pick the apps, categories and sites you would rather earn. Apple&rsquo;s own Screen Time settings hold them, on this iPhone. Nivli never learns their names.</p></div>
+      <div class="card"><div class="step">2</div><h3>Win the day</h3><p>A workout, or your daily step goal, or either one &mdash; you choose the rule in a sentence, and you set the number. Log a workout in two taps, or connect Apple Health and let a run, a lift, a class or a walk do it for you.</p></div>
+      <div class="card"><div class="step">3</div><h3>Then scroll</h3><p>Your apps open until midnight and the day is counted as a win. Rest days are yours to set, and you can take today off.</p></div>
+    </div>
+    <p class="fine">Nivli cannot close an app you already have open. iOS shows the Nivli lock screen the next time you open it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What else is in it</h2>
+    <div class="grid">
+      <div class="card"><h3>A widget on your Home Screen</h3><p>The ring, your streak and whether your apps are still waiting &mdash; on the Home Screen or the Lock Screen, in four sizes. Tap it to log a workout without opening the app first.</p></div>
+      <div class="card"><h3>Strict mode</h3><p>A promise you cannot talk yourself out of at eight in the evening. With strict mode on, any change that lowers the bar &mdash; a smaller step goal, an extra rest day, even turning strict mode off &mdash; waits 24 hours. Anything that makes the day harder happens at once, and a waiting change can be cancelled while it waits.</p></div>
+      <div class="card"><h3>Your Tempo, every Sunday</h3><p>Your week&rsquo;s rhythm, not your week&rsquo;s clock: of the days you planned to move, how many you won, with your minutes, your steps turned into a distance, and any record the week set. Nothing in Nivli records or scores what time of day you earned anything.</p></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>The small facts, kept with the thing</h2>
-    <div class="grid two">
-      <div class="card"><div class="dot"></div><h3>Details on every thing</h3><p>Size, brand, model, where it’s kept, expiry date, a link, who did it. Correct one and Nivli keeps the old value, and where each value came from.</p></div>
-      <div class="card"><div class="dot"></div><h3>Ask in your own words</h3><p>On iPhones with Apple Intelligence, a question the keyword search can’t answer goes to Apple’s on-device model, which reads only your own records. Nothing leaves your iPhone, and a switch in Settings turns it off.</p></div>
+    <h2>What it costs</h2>
+    <div class="plan">
+      <h3>7 days free</h3>
+      <p class="amt">then $4.99 / month, or $29.99 / year</p>
+      <p class="then">The yearly plan works out at $2.50 a month. Cancel any time before the free week ends and nothing is charged.</p>
+      <ul>
+        <li>Your apps wait until you&rsquo;ve won the day, then open until midnight</li>
+        <li>Apple Health can win the day for you, even while Nivli is closed</li>
+        <li>Streaks that make it stick, and rest days that do not break them</li>
+        <li>The widget, strict mode, and Your Tempo every Sunday</li>
+        <li>An evening nudge, if you want one</li>
+      </ul>
     </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Snap the label</h2>
-    <div class="grid two">
-      <div class="card"><div class="dot"></div><h3>A photo on any entry</h3><p>The size on the filter box, the receipt, the meter reading. Add it from your photos or take it on the spot — it stays with the entry, on your iPhone.</p></div>
-      <div class="card"><div class="dot"></div><h3>Search what’s printed</h3><p>Nivli reads the text in the photo on your phone, so “16x25” finds the day you bought that filter. Free for everyone.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Share it with your household</h2>
-    <div class="grid two">
-      <div class="card"><div class="dot"></div><h3>One home, one memory</h3><p>Create a household and invite family with Apple’s sharing sheet. Switch a thing to “Share with household” and it shows up on everyone’s iPhone with its whole history.</p></div>
-      <div class="card"><div class="dot"></div><h3>Anyone can log it</h3><p>Whoever changed the filter taps Log now, and the history says “Logged by Sam”. Reminders reach every member, and Did it on any phone updates the rest. Works offline, syncs later.</p></div>
-    </div>
-    <p class="fine">Shared things live in the creator’s own iCloud, seen only by the people they invite. Creating a household is part of Nivli+; joining is free.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Just say it</h2>
-    <ul class="say">
-      <li><b>“Hey Siri, log something in Nivli”</b><span>Siri asks what happened. “I changed the air filter.”</span></li>
-      <li><b>“Hey Siri, log air filter in Nivli”</b><span>Existing things are recognised by name.</span></li>
-      <li><b>“Hey Siri, when did I last change the air filter in Nivli?”</b><span>“3 months, 2 weeks ago — on June 1.”</span></li>
-      <li><b>“Hey Siri, remind me in Nivli”</b><span>Siri asks what and when. “In one year about my passport.”</span></li>
-      <li><b>“Hey Siri, what’s coming up in Nivli?”</b><span>The things due soon.</span></li>
-      <li><b>“Hey Siri, remember something in Nivli”</b><span>“What should I remember?” — “The furnace filter is 16x25x1.” Later: “Ask Nivli” — “What size is the furnace filter?”</span></li>
-      <li><b>“Hey Siri, ask Nivli”</b><span>“What do you want to know?” — “How many times did I water the plants this month?” “What’s overdue?” “What did I do last week?” Type the same into search on Home for an answer card. On iPhones with Apple Intelligence, ask in your own words too — answered from your own records, on your iPhone.</span></li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Free, with Nivli+ if you want more</h2>
-    <div class="price">
-      <div class="plan">
-        <h3>Free</h3>
-        <p class="amt">$0</p>
-        <ul>
-          <li>Unlimited things and logs</li>
-          <li>Full history and timeline</li>
-          <li>Photos on entries, with the text in them searchable</li>
-          <li>Details on every thing, with their history</li>
-          <li>Siri and widgets</li>
-          <li>Up to 3 active reminders</li>
-          <li>Join a household and log shared things</li>
-        </ul>
-      </div>
-      <div class="plan plus">
-        <h3>Nivli+</h3>
-        <p class="amt">$2.99 / month</p>
-        <ul>
-          <li>Unlimited active reminders</li>
-          <li>Custom repeat intervals — “every 45 days”</li>
-          <li>CSV export of your history</li>
-          <li>Create a household to share with family</li>
-        </ul>
-        <p class="opts">Or $19.99 / year, or $39.99 once for lifetime.</p>
-      </div>
-    </div>
-    <p class="fine">US prices; your local price is shown in the app. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period, and are managed in your Apple Account settings. Restore Purchases is always available in the app.</p>
+    <p class="fine">No free tier, no ads, no upsell. US prices; your local price is shown in the app. Payment is charged to your Apple Account at the end of the free week unless cancelled at least 24 hours before it ends, and the subscription renews automatically at the same price unless cancelled at least 24 hours before the end of the period. Manage or cancel in your Apple Account settings. Restore Purchases is always on the paywall.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <h2>Private by design</h2>
-    <p>Nivli has no account, no servers, no analytics, no advertising, and no third-party code. Your things, logs, and reminders live in the app on your iPhone and in your own device backup. Things you share with your household are stored in the creator’s own iCloud account, visible only to the people invited — never to us. Photos you attach are stored in the app, and the text in them is read on the device. On iPhones with Apple Intelligence, a question in your own words is answered by Apple’s on-device model on the phone, from your own records; nothing is sent anywhere, and you can turn it off in Settings. The only permissions it asks for are Notifications, if you set a reminder, and the camera, if you tap Take photo. App Store privacy label: <strong>Data Not Collected</strong>.</p>
+    <p>Nivli has no account, no server, no analytics, no advertising and no third-party code; the only network traffic is Apple&rsquo;s own App Store, for the subscription, and one small settings file that carries the app&rsquo;s own wording and nothing about you. The apps you choose are handed to Nivli as opaque tokens, so Nivli can shield them without ever learning their names. If you connect Apple Health, Nivli reads your workouts and your daily step totals on the iPhone and writes nothing back; that data never leaves the device. Your workout log, your streak and your settings live in Nivli&rsquo;s own storage on this iPhone. Turn Nivli off or delete it and iOS lifts the shields. App Store privacy label: <strong>Data Not Collected</strong>. The <a href="privacy.html">privacy policy</a> lists every single thing Nivli stores.</p>
   </div>
 </section>
 
@@ -180,7 +125,7 @@
       <a href="privacy.html">Privacy Policy</a>
       <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
     </nav>
-    <p>© 2026 Brian Suchanek. Nivli is not affiliated with Apple. Siri and iPhone are trademarks of Apple Inc.</p>
+    <p>© 2026 Brian Suchanek. Nivli is not affiliated with Apple. Apple, iPhone, Apple Health and Apple Watch are trademarks of Apple Inc.</p>
   </div>
 </footer>
 
